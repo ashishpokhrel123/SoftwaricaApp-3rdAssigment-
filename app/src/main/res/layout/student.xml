@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/avatar"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/ivImage"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:hint="Name of Student"
+        android:layout_toRightOf="@+id/ivImage" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/bntDelete"
+        android:background="@drawable/delete"
+
+        android:layout_toEndOf="@+id/txtName"
+        android:layout_toRightOf="@+id/txtName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAge"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/ivImage"
+        android:layout_below="@+id/txtName"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:hint="Age of Student"
+        android:layout_toRightOf="@+id/ivImage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAddress"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/ivImage"
+        android:layout_below="@+id/txtAge"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:hint="Address of Student"
+        android:layout_toRightOf="@+id/ivImage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGender"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/txtAddress"
+        android:layout_below="@+id/txtAge"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:hint="Gender"
+        android:layout_toRightOf="@+id/txtAddress" />
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
